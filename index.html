@@ -6,13 +6,16 @@
     <title>Fasah Fawri - Customs Clearance, Transport & Freight Shipping</title>
 
     <!-- Favicon for Browser Tab -->
-    <link rel="icon" type="image/png" href="images/logo-icon.png" />
+    <link 
+      rel="icon" 
+      type="image/png" 
+      href="images/logo-icon3.png" 
+      class="w-full h-full object-cover scale-110 rendring-crisp" 
+      style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"/>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"/>
     <style>
       body {
         font-family: "Plus Jakarta Sans", sans-serif;
@@ -21,25 +24,16 @@
   </head>
   <body class="bg-slate-50 text-slate-800 antialiased">
     <!-- Top Navigation Header -->
-    <header
-      class="bg-blue-950 text-white shadow-lg sticky top-0 z-50 border-b border-blue-900"
-    >
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
+    <header class="bg-blue-950 text-white shadow-lg sticky top-0 z-50 border-b border-blue-900">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <!-- Brand Logo from Corporate Profile -->
-        <a
-          href="index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <div
-            class="w-11 h-11 rounded-full bg-blue-600 flex items-center justify-center shadow-md overflow-hidden p-1 border border-blue-400"
-          >
-            <img
-              src="images/logo-icon.png"
-              alt="Fasah Fawri Logo"
-              class="w-full h-full object-contain filter brightness-125"
-            />
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md overflow-hidden shrink-0 border border-slate-200">
+            <img 
+            src="images/logo-icon.png" 
+            alt="Fasah Fawri Logo" 
+            class="w-full h-full object-cover scale-110 rendring-crisp"
+            style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"/>
           </div>
           <div>
             <span class="text-xl font-bold tracking-tight block leading-none">
@@ -47,48 +41,43 @@
               <span class="lang-ar hidden">فسح فوري</span>
             </span>
             <span class="text-xs text-slate-400 font-medium tracking-wide">
-              <span class="lang-en">Customs Clearance & Transport</span>
-              <span class="lang-ar hidden">للتخليص الجمركي والنقل</span>
+              <span class="lang-en">Fasah Fawri Logistics and Customs Clearance</span>
+              <span class="lang-ar hidden"> فسح فوري للخدمات اللوجستية والتخليض الجمركي</span>
             </span>
           </div>
         </a>
 
         <!-- Navigation Links -->
-        <nav
-          class="hidden lg:flex space-x-6 rtl:space-x-reverse font-medium text-sm text-slate-300"
-        >
-          <a href="#about" class="hover:text-amber-400 transition"
-            ><span class="lang-en">About Us</span
-            ><span class="lang-ar hidden">من نحن</span></a
-          >
-          <a href="#customs-clearance" class="hover:text-amber-400 transition"
-            ><span class="lang-en">Customs Clearance</span
-            ><span class="lang-ar hidden">التخليص الجمركي</span></a
-          >
-          <a href="#transport" class="hover:text-amber-400 transition"
-            ><span class="lang-en">Transport</span
-            ><span class="lang-ar hidden">النقل البري</span></a
-          >
-          <a
-            href="#international-shipping"
-            class="hover:text-amber-400 transition"
-            ><span class="lang-en">International Shipping</span
-            ><span class="lang-ar hidden">الشحن الدولي</span></a
-          >
-          <a href="#ports" class="hover:text-amber-400 transition"
-            ><span class="lang-en">Ports</span
-            ><span class="lang-ar hidden">المنافذ</span></a
-          >
-          <a href="#clients" class="hover:text-amber-400 transition"
-            ><span class="lang-en">Clients</span
-            ><span class="lang-ar hidden">عملاؤنا</span></a
-          >
+        <nav class="hidden lg:flex space-x-6 rtl:space-x-reverse font-medium text-sm text-slate-300">
+          <a href="#about" class="hover:text-amber-400 transition">
+            <span class="lang-en">About Us</span>
+            <span class="lang-ar hidden">من نحن</span>
+          </a>
+          <a href="#customs-clearance" class="hover:text-amber-400 transition">
+            <span class="lang-en">Customs Clearance</span>
+            <span class="lang-ar hidden">التخليص الجمركي</span>
+          </a>
+          <a href="#transport" class="hover:text-amber-400 transition">
+            <span class="lang-en">Transport</span>
+            <span class="lang-ar hidden">النقل البري</span>
+            </a>
+          <a href="#international-shipping" class="hover:text-amber-400 transition">
+            <span class="lang-en">International Shipping</span>
+            <span class="lang-ar hidden">الشحن الدولي</span>
+            </a>
+          <a href="#ports" class="hover:text-amber-400 transition">
+            <span class="lang-en">Ports</span>
+            <span class="lang-ar hidden">المنافذ</span>
+            </a>
+          <a href="#clients" class="hover:text-amber-400 transition">
+            <span class="lang-en">Clients</span>
+            <span class="lang-ar hidden">عملاؤنا</span>
+            </a>
         </nav>
 
         <!-- Actions & Language Switcher -->
         <div class="flex items-center space-x-4 rtl:space-x-reverse">
-          <button
-            onclick="switchLanguage('ar')"
+          <button onclick="switchLanguage('ar')"
             class="lang-en bg-slate-800 border border-slate-700 text-amber-400 px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-slate-700 transition"
           >
             عربي
@@ -100,162 +89,104 @@
             English
           </button>
 
-          <a
-            href="#contact"
+          <a href="#contact"
             class="hidden sm:inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold px-4 py-2 rounded-lg transition shadow-md"
           >
             <span class="lang-en">Request a quote</span>
             <span class="lang-ar hidden">طلب عرض سعر</span>
           </a>
 
-          <button
-            onclick="toggleMobileMenu()"
-            class="lg:hidden text-slate-300 focus:outline-none"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
+          <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-300 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden lg:hidden bg-slate-950 px-6 py-4 space-y-3 border-t border-slate-800 text-sm"
-      >
-        <a href="#about" class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">About Us</span
-          ><span class="lang-ar hidden">من نحن</span></a
-        >
-        <a
-          href="#customs-clearance"
-          class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">Customs Clearance</span
-          ><span class="lang-ar hidden">التخليص الجمركي</span></a
-        >
-        <a href="#transport" class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">Domestic & Int'l Transport</span
-          ><span class="lang-ar hidden">النقل المحلي والدولي</span></a
-        >
-        <a
-          href="#international-shipping"
-          class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">International Shipping</span
-          ><span class="lang-ar hidden">الشحن الدولي</span></a
-        >
-        <a href="#ports" class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">Ports & Borders</span
-          ><span class="lang-ar hidden">المنافذ والموانئ</span></a
-        >
-        <a href="#clients" class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">Clients</span
-          ><span class="lang-ar hidden">عملاؤنا</span></a
-        >
-        <a href="#contact" class="block text-slate-300 hover:text-amber-400"
-          ><span class="lang-en">Open Shipment File</span
-          ><span class="lang-ar hidden">فتح ملف شحنة</span></a
-        >
+      <div id="mobile-menu" class="hidden lg:hidden bg-blue-950 px-6 py-4 space-y-3 border-t border-blue-800 text-sm">
+        <a href="#about" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">About Us</span>
+          <span class="lang-ar hidden">من نحن</span>
+        </a>
+        <a href="#customs-clearance" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">Customs Clearance</span>
+          <span class="lang-ar hidden">التخليص الجمركي</span>
+        </a>
+        <a href="#transport" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">Domestic & Int'l Transport</span>
+          <span class="lang-ar hidden">النقل المحلي والدولي</span>
+        </a>
+        <a href="#international-shipping" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">International Shipping</span>
+          <span class="lang-ar hidden">الشحن الدولي</span>
+        </a>
+        <a href="#ports" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">Ports & Borders</span>
+          <span class="lang-ar hidden">المنافذ والموانئ</span>
+        </a>
+        <a href="#clients" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">Clients</span>
+          <span class="lang-ar hidden">عملاؤنا</span>
+        </a>
+        <a href="#contact" class="block text-slate-300 hover:text-amber-400">
+          <span class="lang-en">Open Shipment File</span>
+          <span class="lang-ar hidden">فتح ملف شحنة</span>
+        </a>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section
-      class="py-32 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden"
-    >
-      <div
-        class="container mx-auto px-6 grid md:grid-cols-12 gap-12 items-center"
-      >
+    <section class="py-32 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden">
+      <div class="container mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
         <div class="md:col-span-7 space-y-6">
-          <div
-            class="inline-flex items-center space-x-2 rtl:space-x-reverse bg-blue-900/80 border border-blue-700 px-3.5 py-1.5 rounded-full text-xs font-medium text-sky-400 shadow-inner"
-          >
+          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse bg-blue-900/80 border border-blue-700 px-3.5 py-1.5 rounded-full text-xs font-medium text-sky-400 shadow-inner">
             <span>🛡️</span>
-            <span class="lang-en"
-              >Licensed Saudi Establishment · License 4250</span
-            >
+            <span class="lang-en">Licensed Saudi Establishment · License 4250</span>
             <span class="lang-ar hidden">مؤسسة سعودية مرخصة · ترخيص 4250</span>
           </div>
-
-          <h1
-            class="text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight"
-          >
-            <span class="lang-en"
-              >Seamless Clearance, Transport & Global Freight.</span
-            >
-            <span class="lang-ar hidden"
-              >تخليص جمركي ونقل وشحن دولي متكامل.</span
-            >
+          <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            <span class="lang-en">Seamless Clearance, Transport & Global Freight.</span>
+            <span class="lang-ar hidden">تخليص جمركي ونقل وشحن دولي متكامل.</span>
           </h1>
-
-          <p
-            class="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed"
-          >
-            <span class="lang-en"
-              >Operating 24/7 across sea, air, and land ports in Saudi Arabia.
+          <p class="text-slate-300 text-base md:text-lg max-w-xl leading-relaxed">
+            <span class="lang-en">
+              Operating 24/7 across sea, air, and land ports in Saudi Arabia.
               Choose your dedicated division below for specialized
-              support.</span
-            >
-            <span class="lang-ar hidden"
-              >نعمل على مدار الساعة طوال أيام الأسبوع عبر كافة المنافذ البحرية
+              support.</span>
+            <span class="lang-ar hidden">
+              نعمل على مدار الساعة طوال أيام الأسبوع عبر كافة المنافذ البحرية
               والجوية والبرية بالمملكة. اختر القسم المناسب للتواصل
-              المباشر.</span
-            >
+              المباشر.</span>
           </p>
-
           <div class="pt-2 flex flex-wrap gap-4 items-center">
-            <a
-              href="#customs-clearance"
-              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm"
-            >
+            <a href="#customs-clearance" 
+              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm">
               <span class="lang-en">Customs Desk</span>
               <span class="lang-ar hidden">التخليص الجمركي</span>
             </a>
-            <a
-              href="#transport"
-              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm"
-            >
+            <a href="#transport" 
+              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm">
               <span class="lang-en">Transport Desk</span>
               <span class="lang-ar hidden">قسم النقل</span>
             </a>
-            <a
-              href="#international-shipping"
-              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm"
-            >
+            <a href="#international-shipping"
+              class="bg-blue-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-3 rounded-xl shadow-lg transition text-xs sm:text-sm">
               <span class="lang-en">Shipping Desk</span>
               <span class="lang-ar hidden">الشحن الدولي</span>
             </a>
           </div>
         </div>
-
         <div class="md:col-span-5">
-          <div
-            class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
-          >
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
             <img
               src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-              alt="Port Operations"
-              class="w-full h-80 object-cover"
-            />
+              alt="Port Operations" class="w-full h-80 object-cover"/>
             <div
-              class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-4 text-xs font-semibold text-slate-200"
-            >
-              <span class="lang-en"
-                >Integrated Logistics · Sea, Air & Land</span
-              >
-              <span class="lang-ar hidden"
-                >خدمات لوجستية متكاملة · بحري وجوي وبري</span
-              >
+              class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-4 text-xs font-semibold text-slate-200">
+              <span class="lang-en">Integrated Logistics · Sea, Air & Land</span>
+              <span class="lang-ar hidden">خدمات لوجستية متكاملة · بحري وجوي وبري</span>
             </div>
           </div>
         </div>
@@ -269,45 +200,41 @@
       >
         <div>
           <div class="text-3xl font-extrabold text-sky-400">4250</div>
-          <div class="text-xs text-blue-200 mt-1 font-medium">
-            <span class="lang-en">Customs Clearance License</span
-            ><span class="lang-ar hidden">رخصة تخليص جمركي</span>
+          <div class="text-xs text-blue-400 mt-1 font-medium">
+            <span class="lang-en">Customs Clearance License</span>
+            <span class="lang-ar hidden">رخصة تخليص جمركي</span>
           </div>
         </div>
         <div>
           <div class="text-3xl font-extrabold text-sky-400">63/3663</div>
           <div class="text-xs text-blue-400 mt-1 font-medium">
-            <span class="lang-en">TGA Heavy Freight License</span
-            ><span class="lang-ar hidden">ترخيص نقل البضائع (TGA)</span>
+            <span class="lang-en">TGA Heavy Freight License</span>
+            <span class="lang-ar hidden">ترخيص نقل البضائع (TGA)</span>
           </div>
         </div>
         <div>
-          <div class="text-3xl font-extrabold text-sky-400">16+</div>
+          <div class="text-3xl font-extrabold text-sky-400">30+</div>
           <div class="text-xs text-blue-400 mt-1 font-medium">
-            <span class="lang-en">Sea, Air & Land Gates</span
-            ><span class="lang-ar hidden">منفذ بحري وجوي وبري</span>
+            <span class="lang-en">Sea, Air & Land Gates</span>
+            <span class="lang-ar hidden">منفذ بحري وجوي وبري</span>
           </div>
         </div>
         <div>
           <div class="text-3xl font-extrabold text-sky-400">24/7</div>
           <div class="text-xs text-blue-400 mt-1 font-medium">
-            <span class="lang-en">Round-the-clock Follow-up</span
-            ><span class="lang-ar hidden">متابعة على مدار الساعة</span>
+            <span class="lang-en">Round-the-clock Follow-up</span>
+            <span class="lang-ar hidden">متابعة على مدار الساعة</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- DIVISION 1: CUSTOMS CLEARANCE SECTION -->
-    <section
-      id="customs-clearance"
-      class="py-32 bg-white border-b border-slate-200"
-    >
+    <section id="customs-clearance" class="py-32 bg-white border-b border-slate-200">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl mb-12">
           <div
-            class="inline-block bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2"
-          >
+            class="inline-block bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2">
             Division 01
           </div>
           <h2 class="text-3xl font-bold text-slate-900">
@@ -315,78 +242,77 @@
             <span class="lang-ar hidden">خدمات التخليص الجمركي</span>
           </h2>
           <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-            <span class="lang-en"
-              >Comprehensive customs declarations, inspection tracking, transit
+            <span class="lang-en">
+              Comprehensive customs declarations, inspection tracking, transit
               documents, and regulatory release across all Saudi seaports,
-              airports, and land border gates.</span
-            >
-            <span class="lang-ar hidden"
-              >تخليص البيانات الجمركية، متابعة المعاينة، إنجاز المعاملات، والفسح
+              airports, and land border gates.
+            </span>
+            <span class="lang-ar hidden">
+              تخليص البيانات الجمركية، متابعة المعاينة، إنجاز المعاملات، والفسح
               الفوري عبر جميع الموانئ البحرية والجوية والمنافذ البرية
-              بالمملكة.</span
-            >
+              بالمملكة.
+            </span>
           </p>
         </div>
-
         <div class="grid md:grid-cols-3 gap-6 mb-10">
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">⚓</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Import & Export Clearance</span
-              ><span class="lang-ar hidden">تخليص الاستيراد والتصدير</span>
+              <span class="lang-en">Import & Export Clearance</span>
+              <span class="lang-ar hidden">تخليص الاستيراد والتصدير</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Accurate processing of customs declarations and tariff
-                classification to avoid delay penalties.</span
-              ><span class="lang-ar hidden"
+              <span class="lang-en">
+                Accurate processing of customs declarations and tariff
+                classification to avoid delay penalties.
+              </span>
+              <span class="lang-ar hidden"
                 >إعداد وتخمين البيانات الجمركية بدقة وتفادي أي تأخير أو غرامات
-                في المنافذ.</span
-              >
+                في المنافذ.
+              </span>
             </p>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">📋</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">SABER & SFDA Approvals</span
-              ><span class="lang-ar hidden">شهادات سابر والهيئة</span>
+              <span class="lang-en">SABER & SFDA Approvals</span>
+              <span class="lang-ar hidden">شهادات سابر والهيئة</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Product registration and conformity certificates support
-                through SABER and Saudi Food & Drug Authority platforms.</span
-              ><span class="lang-ar hidden"
-                >استخراج شهادات المطابقة وإنجاز متطلبات منصة سابر وهيئة الغذاء
-                والدواء.</span
-              >
+              <span class="lang-en">
+                Product registration and conformity certificates support
+                through SABER and Saudi Food & Drug Authority platforms.
+              </span>
+              <span class="lang-ar hidden">
+                استخراج شهادات المطابقة وإنجاز متطلبات منصة سابر وهيئة الغذاء
+                والدواء.
+              </span>
             </p>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">⏱️</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">24/7 Port Operations</span
-              ><span class="lang-ar hidden">متابعة ميدانية 24/7</span>
+              <span class="lang-en">24/7 Port Operations</span>
+              <span class="lang-ar hidden">متابعة ميدانية 24/7</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Dedicated operational staff on the ground at ports for
-                fast-track clearance.</span
-              ><span class="lang-ar hidden"
-                >تواجد ميداني مستمر لمخلصينا داخل المنافذ لتسريع الفسح والفسح
-                الفوري.</span
-              >
+              <span class="lang-en">
+                Dedicated operational staff on the ground at ports for
+                fast-track clearance.
+              </span>
+              <span class="lang-ar hidden">
+                تواجد ميداني مستمر لمخلصينا داخل المنافذ لتسريع الفسح والفسح
+                الفوري.
+              </span>
             </p>
           </div>
         </div>
 
         <!-- Dedicated Contact Box for Customs Clearance -->
         <div
-          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900"
-        >
+          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900">
           <div>
-            <div
-              class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1"
-            >
+            <div class="text-xs font-bold text-sky-400 uppercase tracking-wider mb-1">
               <span class="lang-en">Dedicated Division Desk</span>
               <span class="lang-ar hidden">مكتب القسم المباشر</span>
             </div>
@@ -399,20 +325,15 @@
             </p>
           </div>
           <div class="flex gap-3">
-            <a
-              href="tel:+966548999284"
-              class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition shadow"
-            >
-              📞 <span class="lang-en">Call Desk</span
-              ><span class="lang-ar hidden">اتصال</span>
+            <a href="tel:+966548999284"
+              class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition shadow">
+              📞 <span class="lang-en">Call Desk</span>
+              <span class="lang-ar hidden">اتصال</span>
             </a>
-            <a
-              href="https://wa.me/966548999284"
-              target="_blank"
-              class="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-blue-700 transition"
-            >
-              💬 <span class="lang-en">WhatsApp</span
-              ><span class="lang-ar hidden">واتساب</span>
+            <a href="https://wa.me/966548999284" target="_blank"
+              class="bg-blue-900 hover:bg-blue-800 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-blue-700 transition">
+              💬 <span class="lang-en">WhatsApp</span>
+              <span class="lang-ar hidden">واتساب</span>
             </a>
           </div>
         </div>
@@ -420,15 +341,10 @@
     </section>
 
     <!-- DIVISION 2: DOMESTIC & INTERNATIONAL TRANSPORT SECTION -->
-    <section
-      id="transport"
-      class="py-32 bg-slate-100/80 border-b border-slate-200"
-    >
+    <section id="transport" class="py-32 bg-slate-100/80 border-b border-slate-200">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl mb-12">
-          <div
-            class="inline-block bg-blue-100 text-blue-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2"
-          >
+          <div class="inline-block bg-blue-100 text-blue-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2">
             Division 02
           </div>
           <h2 class="text-3xl font-bold text-slate-900">
@@ -436,16 +352,16 @@
             <span class="lang-ar hidden">النقل البري المحلي والدولي</span>
           </h2>
           <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-            <span class="lang-en"
-              >Heavy freight transport for commercial goods from ports to
+            <span class="lang-en">
+              Heavy freight transport for commercial goods from ports to
               warehouses across all regions of Saudi Arabia and neighboring GCC
-              land borders under TGA License 63/00003663.</span
-            >
-            <span class="lang-ar hidden"
-              >خدمات النقل البري الثقيل للبضائع التجارية من الموانئ إلى
+              land borders under TGA License 63/00003663.
+            </span>
+            <span class="lang-ar hidden">
+              خدمات النقل البري الثقيل للبضائع التجارية من الموانئ إلى
               المستودعات داخل كافة مناطق المملكة ودول الخليج بموجب ترخيص الهيئة
-              العامة للنقل رقم 63/00003663.</span
-            >
+              العامة للنقل رقم 63/00003663.
+            </span>
           </p>
         </div>
 
@@ -453,86 +369,76 @@
           <div class="bg-white p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">🚚</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Heavy Commercial Cargo</span
-              ><span class="lang-ar hidden">نقل البضائع الثقيلة</span>
+              <span class="lang-en">Heavy Commercial Cargo</span>
+              <span class="lang-ar hidden">نقل البضائع الثقيلة</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Full container loads (FCL) and heavy industrial cargo
-                distribution across all Saudi provinces.</span
-              ><span class="lang-ar hidden"
-                >نقل الحاويات والبضائع الثقيلة والصناعية إلى كافة مدن ومحافظات
-                المملكة.</span
-              >
+              <span class="lang-en">
+                Full container loads (FCL) and heavy industrial cargo
+                distribution across all Saudi provinces.
+              </span>
+              <span class="lang-ar hidden">
+                نقل الحاويات والبضائع الثقيلة والصناعية إلى كافة مدن ومحافظات
+                المملكة.
+              </span>
             </p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">🌐</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Cross-Border Land Transport</span
-              ><span class="lang-ar hidden">النقل البري الدولي (الخليج)</span>
+              <span class="lang-en">Cross-Border Land Transport</span>
+              <span class="lang-ar hidden">النقل البري الدولي (الخليج)</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Scheduled overland transport covering UAE (Batha), Bahrain
-                (Causeway), Kuwait, Qatar, Oman, and Jordan.</span
-              ><span class="lang-ar hidden"
-                >رحلات برية منتظمة تغطي الإمارات، البحرين، الكويت، قطر، عمان،
-                والأردن.</span
-              >
+              <span class="lang-en">
+                Scheduled overland transport covering UAE (Batha), Bahrain
+                (Causeway), Kuwait, Qatar, Oman, and Jordan.
+              </span>
+              <span class="lang-ar hidden">
+                رحلات برية منتظمة تغطي الإمارات، البحرين، الكويت، قطر، عمان،والأردن.
+              </span>
             </p>
           </div>
           <div class="bg-white p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">📦</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Port-to-Door Delivery</span
-              ><span class="lang-ar hidden">من الميناء إلى المستودع</span>
+              <span class="lang-en">Port-to-Door Delivery</span>
+              <span class="lang-ar hidden">من الميناء إلى المستودع</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Seamless pickup immediately upon customs clearance directly to
-                client sites.</span
-              ><span class="lang-ar hidden"
-                >استلام فوري للبضائع فور فسحها ونقلها مباشرة لموقع العميل.</span
-              >
+              <span class="lang-en">
+                Seamless pickup immediately upon customs clearance directly to
+                client sites.
+              </span>
+              <span class="lang-ar hidden">استلام فوري للبضائع فور فسحها ونقلها مباشرة لموقع العميل.</span>
             </p>
           </div>
         </div>
 
         <!-- Dedicated Contact Box for Transport -->
         <div
-          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900"
-        >
+          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900">
           <div>
-            <div
-              class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1"
-            >
-              <span class="lang-en">Dedicated Transport Desk</span
-              ><span class="lang-ar hidden">مكتب النقل المباشر</span>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
+              <span class="lang-en">Dedicated Transport Desk</span>
+              <span class="lang-ar hidden">مكتب النقل المباشر</span>
             </div>
             <div class="text-lg font-bold">
-              <span class="lang-en">Customer Support · Abu Kareem</span>
-              <span class="lang-ar hidden">خدمة العملاء · أبو كريم</span>
+              <span class="lang-en">Customer Support · Ismail Taleb</span>
+              <span class="lang-ar hidden">خدمة العملاء · إسماعيل طالب</span>
             </div>
-            <p class="text-xs text-slate-400 mt-1">
-              Direct Line: +966 51 075 8989 | TGA License: 63/00003663
-            </p>
+            <p class="text-xs text-slate-400 mt-1">Direct Line: +966 53 432 2494 | TGA License: 63/00003663</p>
           </div>
           <div class="flex gap-3">
-            <a
-              href="tel:+966510758989"
-              class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition"
-            >
-              📞 <span class="lang-en">Call Transport Desk</span
-              ><span class="lang-ar hidden">اتصال بمكتب النقل</span>
+            <a href="tel:+966534322494"
+              class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition">
+              📞 <span class="lang-en">Call Transport Desk</span>
+              <span class="lang-ar hidden">اتصال بمكتب النقل</span>
             </a>
-            <a
-              href="https://wa.me/966510758989"
-              target="_blank"
-              class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-slate-700 transition"
-            >
-              💬 <span class="lang-en">WhatsApp</span
-              ><span class="lang-ar hidden">واتساب</span>
+            <a href="https://wa.me/966534322494" target="_blank"
+              class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-slate-700 transition">
+              💬 <span class="lang-en">WhatsApp</span>
+              <span class="lang-ar hidden">واتساب</span>
             </a>
           </div>
         </div>
@@ -540,15 +446,11 @@
     </section>
 
     <!-- DIVISION 3: INTERNATIONAL FREIGHT SHIPPING SECTION -->
-    <section
-      id="international-shipping"
-      class="py-32 bg-white border-b border-slate-200"
-    >
+    <section id="international-shipping" class="py-32 bg-white border-b border-slate-200">
       <div class="container mx-auto px-6">
         <div class="max-w-3xl mb-12">
           <div
-            class="inline-block bg-emerald-100 text-emerald-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2"
-          >
+            class="inline-block bg-emerald-100 text-emerald-900 text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider mb-2">
             Division 03
           </div>
           <h2 class="text-3xl font-bold text-slate-900">
@@ -556,15 +458,15 @@
             <span class="lang-ar hidden">الشحن الدولي (بحري - جوي)</span>
           </h2>
           <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-            <span class="lang-en"
-              >Worldwide ocean and air freight solutions connecting Saudi Arabia
+            <span class="lang-en">
+              Worldwide ocean and air freight solutions connecting Saudi Arabia
               to global trading hubs with end-to-end documentation and
-              tracking.</span
-            >
-            <span class="lang-ar hidden"
-              >حلول الشحن البحري والجوي العالمي لتوصيل شحناتكم من وإلى كافة
-              الموانئ والمطارات العالمية بكل يسر وسهولة.</span
-            >
+              tracking.
+            </span>
+            <span class="lang-ar hidden">
+              حلول الشحن البحري والجوي العالمي لتوصيل شحناتكم من وإلى كافة
+              الموانئ والمطارات العالمية بكل يسر وسهولة.
+            </span>
           </p>
         </div>
 
@@ -572,86 +474,73 @@
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">🚢</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Ocean Freight (FCL / LCL)</span
-              ><span class="lang-ar hidden">الشحن البحري</span>
+              <span class="lang-en">Ocean Freight (FCL / LCL)</span>
+              <span class="lang-ar hidden">الشحن البحري</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Full container and consolidated sea freight movements through
-                Dammam, Jeddah, and King Abdullah Ports.</span
-              ><span class="lang-ar hidden"
-                >شحن الحاويات الكاملة والجزئية عبر ميناء الملك عبد العزيز وميناء
-                جدة الإسلامي وميناء الملك عبد الله.</span
-              >
+              <span class="lang-en">
+                Full container and consolidated sea freight movements through
+                Dammam, Jeddah, and King Abdullah Ports.
+              </span>
+              <span class="lang-ar hidden">
+                شحن الحاويات الكاملة والجزئية عبر ميناء الملك عبد العزيز وميناء
+                جدة الإسلامي وميناء الملك عبد الله.
+              </span>
             </p>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">✈️</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">Air Cargo Forwarding</span
-              ><span class="lang-ar hidden">الشحن الجوي</span>
+              <span class="lang-en">Air Cargo Forwarding</span>
+              <span class="lang-ar hidden">الشحن الجوي</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Express air cargo services via Dammam (DMM), Riyadh (RUH), and
-                Jeddah (JED) airports.</span
-              ><span class="lang-ar hidden"
-                >خدمات الشحن الجوي السريع عبر مطارات الدمام، الرياض، وجدة.</span
-              >
+              <span class="lang-en">Express air cargo services via Dammam (DMM), Riyadh (RUH), andJeddah (JED) airports.</span>
+              <span class="lang-ar hidden">خدمات الشحن الجوي السريع عبر مطارات الدمام، الرياض، وجدة.</span>
             </p>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
             <div class="text-2xl mb-3">🔄</div>
             <h3 class="font-bold text-slate-900 mb-2">
-              <span class="lang-en">International Transit</span
-              ><span class="lang-ar hidden">خدمات الترانزيت الدولي</span>
+              <span class="lang-en">International Transit</span>
+              <span class="lang-ar hidden">خدمات الترانزيت الدولي</span>
             </h3>
             <p class="text-xs text-slate-500 leading-relaxed">
-              <span class="lang-en"
-                >Cross-border transit forwarding connecting international ports
-                to destination countries through KSA.</span
-              ><span class="lang-ar hidden"
-                >نقل الترانزيت عبر أراضي المملكة الممتد إلى الدول
-                المجاورة.</span
-              >
+              <span class="lang-en">
+                Cross-border transit forwarding connecting international ports
+                to destination countries through KSA.
+              </span>
+              <span class="lang-ar hidden">نقل الترانزيت عبر أراضي المملكة الممتد إلى الدولالمجاورة.</span>
             </p>
           </div>
         </div>
 
         <!-- Dedicated Contact Box for International Shipping -->
         <div
-          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900"
-        >
+          class="py-10 bg-gradient-to-b from-blue-950 via-blue-900 to-blue-950 text-white relative overflow-hidden bg-blue-950 text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 border border-blue-900">
           <div>
-            <div
-              class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1"
-            >
-              <span class="lang-en">Dedicated International Shipping Desk</span
-              ><span class="lang-ar hidden">مكتب الشحن الدولي المباشر</span>
+            <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">
+              <span class="lang-en">Dedicated International Shipping Desk</span>
+              <span class="lang-ar hidden">مكتب الشحن الدولي المباشر</span>
             </div>
             <div class="text-lg font-bold">
-              <span class="lang-en">Operations Manager · Esmail Taleb</span>
-              <span class="lang-ar hidden">مدير العمليات · إسماعيل طالب</span>
+              <span class="lang-en">Operations Manager · Mehboob Alam</span>
+              <span class="lang-ar hidden">مدير العمليات · محبوب علم</span>
             </div>
             <p class="text-xs text-slate-400 mt-1">
-              Direct Line: +966 53 432 2494 | Email: ff@fasahcustomsgroup.org
+              Direct Line: +966 53 229 0045 | Email: ff@fasahcustomsgroup.org
             </p>
           </div>
           <div class="flex gap-3">
-            <a
-              href="tel:+966534322494"
-              class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition"
-            >
-              📞 <span class="lang-en">Call Shipping Desk</span
-              ><span class="lang-ar hidden">اتصال بمكتب الشحن</span>
+            <a href="tel:+966532290045"
+              class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition">
+              📞 <span class="lang-en">Call Shipping Desk</span>
+              <span class="lang-ar hidden">اتصال بمكتب الشحن</span>
             </a>
-            <a
-              href="https://wa.me/966534322494"
-              target="_blank"
-              class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-slate-700 transition"
-            >
-              💬 <span class="lang-en">WhatsApp</span
-              ><span class="lang-ar hidden">واتساب</span>
+            <a href="https://wa.me/966532290045" target="_blank"
+              class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs border border-slate-700 transition">
+              💬 <span class="lang-en">WhatsApp</span>
+              <span class="lang-ar hidden">واتساب</span>
             </a>
           </div>
         </div>
@@ -660,9 +549,7 @@
 
     <!-- About Section -->
     <section id="about" class="py-48 bg-slate-50">
-      <div
-        class="container mx-auto px-6 grid md:grid-cols-12 gap-12 items-center"
-      >
+      <div class="container mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
         <div class="md:col-span-5">
           <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
@@ -676,54 +563,46 @@
             <span class="lang-ar hidden">عن مؤسسة فسح فوري</span>
           </h2>
           <p class="text-slate-600 text-sm leading-relaxed">
-            <span class="lang-en"
-              >Fasah Fawri Establishment for Logistics & Customs Clearance
+            <span class="lang-en">
+              Fasah Fawri Establishment for Logistics & Customs Clearance
               operates to high standards of speed, accuracy, and full alignment
-              with ZATCA and Saudi Transport Authority regulations.</span
-            >
-            <span class="lang-ar hidden"
-              >تعمل مؤسسة فسح فوري للخدمات اللوجستية والتخليص الجمركي وفق أعلى
+              with ZATCA and Saudi Transport Authority regulations.
+            </span>
+            <span class="lang-ar hidden">
+              تعمل مؤسسة فسح فوري للخدمات اللوجستية والتخليص الجمركي وفق أعلى
               معايير السرعة والدقة مع الالتزام التام بتعليمات الزكاة والضريبة
-              والجمارك والهيئة العامة للنقل.</span
-            >
+              والجمارك والهيئة العامة للنقل.
+            </span>
           </p>
           <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
-            <div
-              class="text-xs font-bold text-amber-800 tracking-wider uppercase mb-1"
-            >
-              <span class="lang-en">OUR MISSION</span
-              ><span class="lang-ar hidden">رؤيتنا</span>
+            <div class="text-xs font-bold text-amber-800 tracking-wider uppercase mb-1">
+              <span class="lang-en">OUR MISSION</span>
+              <span class="lang-ar hidden">رؤيتنا</span>
             </div>
             <p class="text-xs text-slate-700 font-medium">
-              <span class="lang-en"
-                >To be the preferred logistics partner in KSA, delivering
-                hassle-free customs release and seamless cargo transit.</span
-              >
-              <span class="lang-ar hidden"
-                >أن نكون الخيار الأول في خدمات التخليص والنقل بالمملكة من خلال
-                تقديم خدمات موثوقة وسريعة.</span
-              >
+              <span class="lang-en">
+                To be the preferred logistics partner in KSA, delivering hassle-free customs release and seamless cargo transit.
+              </span>
+              <span class="lang-ar hidden">
+                أن نكون الخيار الأول في خدمات التخليص والنقل بالمملكة من خلال تقديم خدمات موثوقة وسريعة.
+              </span>
             </p>
           </div>
 
           <div class="grid grid-cols-2 gap-4 pt-2">
             <div class="bg-white p-4 rounded-xl border border-slate-200">
               <div class="text-xs text-slate-500">
-                <span class="lang-en">Unified Number</span
-                ><span class="lang-ar hidden">الرقم الموحد</span>
+                <span class="lang-en">Unified Number</span>
+                <span class="lang-ar hidden">الرقم الموحد</span>
               </div>
-              <div class="text-base font-bold text-slate-900 mt-1">
-                7029873267
-              </div>
+              <div class="text-base font-bold text-slate-900 mt-1">7029873267</div>
             </div>
             <div class="bg-white p-4 rounded-xl border border-slate-200">
               <div class="text-xs text-slate-500">
-                <span class="lang-en">VAT Number</span
-                ><span class="lang-ar hidden">الرقم الضريبي</span>
+                <span class="lang-en">VAT Number</span>
+                <span class="lang-ar hidden">الرقم الضريبي</span>
               </div>
-              <div class="text-base font-bold text-slate-900 mt-1">
-                311346854900003
-              </div>
+              <div class="text-base font-bold text-slate-900 mt-1">311346854900003</div>
             </div>
           </div>
         </div>
@@ -739,55 +618,41 @@
             <span class="lang-ar hidden">المنافذ والموانئ المغطاة</span>
           </h2>
           <p class="text-slate-500 text-sm mt-2">
-            <span class="lang-en"
-              >Customs desks covered under License 4250 across all Kingdom
-              regions.</span
-            >
-            <span class="lang-ar hidden"
-              >مكاتبنا الميدانية المغطاة بموجب الرخصة 4250 في كافة
-              المنافذ.</span
-            >
+            <span class="lang-en">
+              Customs desks covered under License 4250 across all Kingdom regions.
+            </span>
+            <span class="lang-ar hidden">
+              مكاتبنا الميدانية المغطاة بموجب الرخصة 4250 في كافة المنافذ.
+          </span>
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-            <div
-              class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3"
-            >
-              📍 <span class="lang-en">Eastern Region</span
-              ><span class="lang-ar hidden">المنطقة الشرقية</span>
+            <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3">
+              📍 <span class="lang-en">Eastern Region</span>
+              <span class="lang-ar hidden">المنطقة الشرقية</span>
             </div>
             <ul class="space-y-2 text-xs font-medium text-slate-700">
-              <li class="pb-1 border-b border-slate-200">
-                King Abdulaziz Port — Dammam
-              </li>
+              <li class="pb-1 border-b border-slate-200">King Abdulaziz Port — Dammam</li>
               <li>King Fahd Airport — Dammam</li>
             </ul>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-            <div
-              class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3"
-            >
-              📍 <span class="lang-en">Western Region</span
-              ><span class="lang-ar hidden">المنطقة الغربية</span>
+            <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3">
+              📍 <span class="lang-en">Western Region</span>
+              <span class="lang-ar hidden">المنطقة الغربية</span>
             </div>
             <ul class="space-y-2 text-xs font-medium text-slate-700">
-              <li class="pb-1 border-b border-slate-200">
-                Jeddah Islamic Port
-              </li>
-              <li class="pb-1 border-b border-slate-200">
-                King Abdulaziz Airport — Jeddah
-              </li>
+              <li class="pb-1 border-b border-slate-200">Jeddah Islamic Port</li>
+              <li class="pb-1 border-b border-slate-200"> King Abdulaziz Airport — Jeddah</li>
               <li>Rabigh & King Abdullah Port</li>
             </ul>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-            <div
-              class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3"
-            >
-              📍 <span class="lang-en">Central Region</span
-              ><span class="lang-ar hidden">المنطقة الوسطى</span>
+            <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3">
+              📍 <span class="lang-en">Central Region</span>
+              <span class="lang-ar hidden">المنطقة الوسطى</span>
             </div>
             <ul class="space-y-2 text-xs font-medium text-slate-700">
               <li class="pb-1 border-b border-slate-200">Dry Port — Riyadh</li>
@@ -795,22 +660,14 @@
             </ul>
           </div>
           <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-            <div
-              class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3"
-            >
-              📍 <span class="lang-en">Land Borders</span
-              ><span class="lang-ar hidden">المنافذ البرية</span>
+            <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-3">
+              📍 <span class="lang-en">Land Borders</span>
+              <span class="lang-ar hidden">المنافذ البرية</span>
             </div>
             <ul class="space-y-2 text-xs font-medium text-slate-700">
-              <li class="pb-1 border-b border-slate-200">
-                King Fahd Causeway — Bahrain
-              </li>
-              <li class="pb-1 border-b border-slate-200">
-                Al Batha — UAE & Salwa — Qatar
-              </li>
-              <li class="pb-1 border-b border-slate-200">
-                Khafji & Raqqa — Kuwait
-              </li>
+              <li class="pb-1 border-b border-slate-200">King Fahd Causeway — Bahrain</li>
+              <li class="pb-1 border-b border-slate-200">Al Batha — UAE & Salwa — Qatar</li>
+              <li class="pb-1 border-b border-slate-200">Khafji & Raqqa — Kuwait</li>
               <li>Haditha, Halat Ammar, Wadiah & Oman</li>
             </ul>
           </div>
@@ -819,137 +676,82 @@
     </section>
 
     <!-- Clients Section -->
-    <section
-      id="clients"
-      class="py-32 bg-blue-950 text-white border-t border-blue-900"
-    >
+    <section id="clients" class="py-32 bg-blue-950 text-white border-t border-blue-900">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-2xl font-bold mb-4">
           <span class="lang-en">Companies We Have Served</span>
           <span class="lang-ar hidden">شركاء النجاح</span>
         </h2>
         <p class="text-blue-300 text-xs mb-20">
-          <span class="lang-en"
-            >Industrial and trading entities that depend on our rapid clearance
-            and transport.</span
-          >
-          <span class="lang-ar hidden"
-            >شركات صناعية وتجارية نعتز بتقديم خدمات التخليص والنقل لها.</span
-          >
+          <span class="lang-en">
+            Industrial and trading entities that depend on our rapid clearanceand transport.
+          </span>
+          <span class="lang-ar hidden">شركات صناعية وتجارية نعتز بتقديم خدمات التخليص والنقل لها.</span>
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/sabic-logo.png"
-                alt="SABIC"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/sabic-logo.png" alt="SABIC" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >SABIC</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">SABIC</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/usg-logo.png"
-                alt="USG"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/usg-logo.png" alt="USG" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >USG</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">USG</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/permapipe-logo.png"
-                alt="PERMA-PIPE"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/permapipe-logo.png" alt="PERMA-PIPE" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >PERMA-PIPE</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">PERMA-PIPE</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/york-logo.png"
-                alt="YORK"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/york-logo.png" alt="YORK" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >YORK</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">YORK</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/youmats-logo.png"
-                alt="YouMats"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/youmats-logo.png" alt="YouMats" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >YouMats</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">YouMats</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/masabik-logo.png"
-                alt="MASABIK"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/masabik-logo.png" alt="MASABIK" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >MASABIK</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">MASABIK</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/ramez-logo.png"
-                alt="Ramez"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/ramez-logo.png" alt="Ramez" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >Ramez</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">Ramez</span> -->
           </div>
           <div
-            class="bg-blue-900/60 px-6 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-start space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition"
-          >
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
             <div class="w-16 h-12 flex items-center justify-center shrink-0">
-              <img
-                src="images/arkaz-logo.png"
-                alt="ARKAZ"
-                class="max-h-full max-w-full object-contain filter brightness-95"
-              />
+              <img src="images/arkaz-logo.png" alt="ARKAZ" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
             </div>
-            <span class="font-bold text-base text-slate-100 tracking-wide"
-              >ARKAZ</span
-            >
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">ARKAZ</span> -->
+          </div>
+          <div
+            class="bg-blue-900/60 px-10 py-4 rounded-xl border border-blue-800 flex flex-row items-center justify-between space-x-4 rtl:space-x-reverse h-24 hover:border-sky-400 transition">
+            <div class="w-16 h-12 flex items-center justify-center shrink-0">
+              <img src="images/arkaz-logo.png" alt="ARKAZ" class="max-h-full max-w-full object-contain filter brightness-95 rounded"/>
+            </div>
+            <!-- <span class="font-bold text-base text-slate-100 tracking-wide">ARKAZ</span> -->
           </div>
         </div>
       </div>
@@ -964,60 +766,60 @@
             <span class="lang-ar hidden">فتح ملف شحنة</span>
           </h2>
           <p class="text-slate-500 text-sm leading-relaxed">
-            <span class="lang-en"
-              >Fill in your shipment details below. Our team will review your
-              inquiry and get back to you immediately.</span
-            >
-            <span class="lang-ar hidden"
-              >يرجى تعبئة تفاصيل الشحنة وسيتم التواصل معكم مباشرة من قبل القسم
-              المعني.</span
-            >
+            <span class="lang-en">
+              Fill in your shipment details below. Our team will review yourinquiry and get back to you immediately.
+              </span>
+            <span class="lang-ar hidden">يرجى تعبئة تفاصيل الشحنة وسيتم التواصل معكم مباشرة من قبل القسمالمعني.</span>
           </p>
 
-          <div
-            class="space-y-3 pt-2 text-xs font-semibold text-slate-700 border-t border-slate-200"
-          >
-            <div
-              class="text-amber-700 font-bold uppercase tracking-wider mb-2 pt-2"
-            >
+          <div class="space-y-3 pt-2 text-xs font-semibold text-slate-700 border-t border-slate-200">
+            <div class="text-amber-700 font-bold uppercase tracking-wider mb-2 pt-2">
               Direct Department Contact Lines
             </div>
             <p class="text-slate-900 font-bold">
               ⚓ Customs Clearance:
-              <a href="tel:+966548999284" class="text-blue-700 hover:underline"
-                >+966 54 899 9284</a
-              >
+              <a href="tel:+966548999284" class="text-blue-700 hover:underline">+966 54 899 9284</a>
               (Abdullah)
             </p>
             <p class="text-slate-900 font-bold">
               🚚 Transport Desk:
-              <a href="tel:+966510758989" class="text-blue-700 hover:underline"
-                >+966 51 075 8989</a
-              >
+              <a href="tel:+966500451355" class="text-blue-700 hover:underline">+966 50 045 1355</a>
               (Abu Kareem)
             </p>
             <p class="text-slate-900 font-bold">
               ✈️ Shipping Desk:
-              <a href="tel:+966534322494" class="text-blue-700 hover:underline"
-                >+966 53 432 2494</a
-              >
+              <a href="tel:+966534322494" class="text-blue-700 hover:underline">+966 53 432 2494</a>
               (Esmail)
             </p>
             <p class="text-slate-900 font-bold">
               📞 Customer Service:
-              <a href="tel:+966500451355" class="text-blue-700 hover:underline"
-                >+966 50 045 1355</a
-              >
+              <a href="tel:+966500451355" class="text-blue-700 hover:underline">+966 50 045 1355</a>
             </p>
             <p>✉️ Emails: customs@fasahfwri.com | ff@fasahcustomsgroup.org</p>
-            <p>📍 Location: Dammam, Al Mazruiyah, King Saud Road, 32414</p>
+            <!-- Map Section or Contact Section Map -->
+<div class="w-full bg-blue-950 p-4 rounded-2xl border border-blue-900 shadow-lg">
+    <div class="mb-3 text-xs font-bold text-blue-300 uppercase tracking-wider">
+        📍 <span class="lang-en">Office Location: Dammam, Al Mazruiyah, King Saud Road</span>
+        <span class="lang-ar hidden">موقعنا: الدمام، المزروعية، شارع الملك سعود</span>
+    </div>
+    
+    <!-- Responsive Google Map Iframe -->
+    <div class="w-full h-80 rounded-xl overflow-hidden border border-blue-800">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.459191123031!2d50.12071537553831!3d26.440923476931545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49c35907db4b11%3A0x5349fca422643b55!2sFasah%20Fawry!5e0!3m2!1sen!2ssa!4v1792397137008!5m2!1sen!2ssa" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+</div>
           </div>
         </div>
 
         <!-- Mandatory Form -->
-        <div
-          class="md:col-span-7 bg-white p-8 rounded-2xl shadow-lg border border-slate-200"
-        >
+        <div class="md:col-span-7 bg-white p-8 rounded-2xl shadow-lg border border-slate-200">
           <form action="send-mail.php" method="POST" class="space-y-4">
             <div class="grid grid-cols-2 gap-4">
               <div>
@@ -1025,24 +827,18 @@
                   <span class="lang-en">Name *</span>
                   <span class="lang-ar hidden">الاسم *</span>
                 </label>
-                <input
-                  type="text"
-                  name="name"
+                <input type="text" name="name"
                   class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                  required
-                />
+                  required/>
               </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">
                   <span class="lang-en">Company *</span>
                   <span class="lang-ar hidden">الشركة *</span>
                 </label>
-                <input
-                  type="text"
-                  name="company"
+                <input type="text" name="company"
                   class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                  required
-                />
+                  required/>
               </div>
             </div>
 
@@ -1052,24 +848,18 @@
                   <span class="lang-en">Mobile *</span>
                   <span class="lang-ar hidden">رقم الجوال *</span>
                 </label>
-                <input
-                  type="tel"
-                  name="mobile"
+                <input type="tel" name="mobile"
                   class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                  required
-                />
+                  required/>
               </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-600 mb-1">
                   <span class="lang-en">Email *</span>
                   <span class="lang-ar hidden">البريد الإلكتروني *</span>
                 </label>
-                <input
-                  type="email"
-                  name="email"
+                <input type="email" name="email"
                   class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                  required
-                />
+                  required/>
               </div>
             </div>
 
@@ -1078,20 +868,12 @@
                 <span class="lang-en">Service Required *</span>
                 <span class="lang-ar hidden">الخدمة المطلوبة *</span>
               </label>
-              <select
-                name="service_type"
+              <select name="service_type"
                 class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                required
-              >
-                <option value="Customs Clearance">
-                  Customs Clearance / التخليص الجمركي
-                </option>
-                <option value="Domestic & Int'l Transport">
-                  Domestic & International Transport / النقل المحلي والدولي
-                </option>
-                <option value="International Freight Shipping">
-                  International Freight Shipping / الشحن الدولي
-                </option>
+                required>
+                <option value="Customs Clearance">Customs Clearance / التخليص الجمركي</option>
+                <option value="Domestic & Int'l Transport">Domestic & International Transport / النقل المحلي والدولي</option>
+                <option value="International Freight Shipping">International Freight Shipping / الشحن الدولي</option>
               </select>
             </div>
 
@@ -1100,26 +882,22 @@
                 <span class="lang-en">Message *</span>
                 <span class="lang-ar hidden">الرسالة *</span>
               </label>
-              <textarea
-                name="message"
-                rows="5"
-                class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
-                required
-              >
-Please provide details about your shipment:
+              <textarea name="message" rows="5"
+                class="w-full h-80 bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-amber-500 focus:outline-none"
+                required>
+                  Please provide details about your shipment:
 
-1. Operation Type: (Import / Export / Transit)
-2. Commodity / Goods Description: 
-3. Origin / Departure Country: 
-4. Port / Destination: 
-5. Approximate Weight / Volume / Containers: </textarea
-              >
+                1. Operation Type: (Import / Export / Transit)
+                2. Commodity / Goods Description: 
+                3. Origin / Departure Country: 
+                4. Port / Destination: 
+                5. Approximate Weight / Volume / Containers: 
+                Other Details:
+              </textarea>
             </div>
 
-            <button
-              type="submit"
-              class="w-full bg-blue-900 hover:bg-slate-800 text-amber-400 font-bold py-3 rounded-lg text-xs transition shadow-md"
-            >
+            <button type="submit"
+              class="w-full bg-blue-900 hover:bg-slate-800 text-amber-400 font-bold py-3 rounded-lg text-s transition shadow-md">
               <span class="lang-en">Send Request</span>
               <span class="lang-ar hidden">إرسال الطلب</span>
             </button>
@@ -1129,20 +907,17 @@ Please provide details about your shipment:
     </section>
 
     <!-- Footer -->
-    <footer
-      class="bg-blue-950 text-slate-400 py-6 border-t border-slate-800 text-s"
-    >
-      <div
-        class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4"
-      >
+    <footer class="bg-blue-950 text-slate-400 py-6 border-t border-slate-800 text-s">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div>
-          Fasah Fawri Establishment for Logistics · Active CR: 7029873267 ·
-          License 4250
+          Fasah Fawri Establishment for Logistics · Active CR: 7029873267 · License 4250
         </div>
         <div class="text-amber-500 font-mono">VAT: 311346854900003</div>
       </div>
     </footer>
-      <div class="text-slate-500 text-center">Developed by DSB</div>
+      <div class="text-slate-500 text-center">Developed by DSB: 
+        <a href="https://wa.me/966545495300" target="_blank" class="text-amber-500 hover:underline hover:text-blue-400">WhatsApp</a>
+      </div>
 
 
     <script src="script.js"></script>
