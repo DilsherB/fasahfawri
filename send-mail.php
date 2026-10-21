@@ -1,48 +1,84 @@
 <?php
-// Include PHPMailer files if installed via Composer, or use native mail with SMTP configuration
-// For Hostinger cPanel, we configure the form to send securely.
+// Import PHPMailer classes into the global namespace
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
+// If you installed via Composer, uncomment the line below:
+// require 'vendor/autoload.php';
+
+// If you are using manual PHPMailer files in a folder named 'phpmailer', uncomment these:
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+// Check if the form was submitted via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and trim input data
-    $name = strip_tags(trim($_POST["name"]));
-    $company = strip_tags(trim($_POST["company"]));
-    $mobile = strip_tags(trim($_POST["mobile"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $service_type = strip_tags(trim($_POST["service_type"]));
-    $message = trim($_POST["message"]);
-
-    // Recipient corporate inbox
-    $recipient = "customs@fasahfwri.com";
     
-    $subject = "New Shipment Request: [$service_type] from $name ($company)";
+    // Sanitize and collect form inputs (adjust field names to match your HTML form if needed)
+    $name    = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email   = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $phone   = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
 
-    // Email body content
-    $email_content = "You have received a new inquiry from your website contact form:\n\n";
-    $email_content .= "---------------------------------------------------\n";
-    $email_content .= "Service Division: $service_type\n";
-    $email_content .= "Client Name:      $name\n";
-    $email_content .= "Company Name:     $company\n";
-    $email_content .= "Mobile Number:    $mobile\n";
-    $email_content .= "Email Address:    $email\n";
-    $email_content .= "---------------------------------------------------\n\n";
-    $email_content .= "Message Details:\n$message\n";
+    // Basic validation
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Please fill in all required fields.";
+        exit;
+    }
 
-    // Headers configuration
-    // Using the user's email as reply-to, and sending from your domain server email
-    $headers = "From: web-inquiry@fasahfwri.com\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();
+    $mail = new PHPMailer(true);
 
-    // Send email using Hostinger's mail server function
-    if (mail($recipient, $subject, $email_content, $headers)) {
-        // Success alert & redirect back to website
-        echo "<script>alert('Your shipment request has been sent successfully! Our team will contact you shortly.'); window.location.href='index.html#contact';</script>";
-    } else {
-        // Error handling alert
-        echo "<script>alert('Sorry, something went wrong while sending your request. Please try calling our direct desk lines.'); window.history.back();</script>";
+    try {
+        // Server settings for Microsoft 365 SMTP
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.office365.com';                   
+        $mail->SMTPAuth   = true;                                   
+        $mail->Username   = 'customs@fasahfwri.com';                
+        $mail->Password   = 'Esl@20#30$40'; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;           
+        $mail->Port       = 587;                                 // TCP port to connect to
+
+        // Recipients
+        // Send from your authenticated M365 email (Microsoft restricts 'From' headers to match the authenticated user)
+        $mail->setFrom('customs@fasahfwri.com', 'Fasah Fawri Website');
+        
+        // Where the email should go when you hit "Reply" in Outlook (the customer's email)
+        $mail->addReplyTo($email, $name);
+
+        // Where the inquiry notification is sent
+        $mail->addAddress('customs@fasahfwri.com', 'Fasah Fawri Customs'); 
+
+        // Content
+        $mail->isHTML(true);                                        // Set email format to HTML
+        $mail->Subject = "New Website Inquiry from: " . $name;
+        
+        // Email body structure
+        $mail->Body    = "
+            <h2>New Customs Clearance Inquiry</h2>
+            <p><strong>Name:</strong> {$name}</p>
+            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Phone:</strong> {$phone}</p>
+            <p><strong>Message:</strong><br>{$message}</p>
+        ";
+        
+        $mail->AltBody = "New Inquiry:\nName: {$name}\nEmail: {$email}\nPhone: {$phone}\nMessage: {$message}";
+
+        // Send the email
+        $mail->send();
+        
+        // Redirect back to your index page (or a thank you page)
+        header("Location: index.html?status=success");
+        exit();
+        
+        // header("Location: thank-you.html"); // Optional redirect
+        
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 } else {
-    // Direct browser access prevention
+    // If someone accesses this file directly via URL
     header("Location: index.html");
+    exit;
 }
 ?>
